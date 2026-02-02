@@ -49,6 +49,6 @@ test('selectCountry2 ',{tag:'@regression'},async({page})=>{
 await page.goto('https://cosmocode.io/automation-practice-webtable/');
 
 await homepage1.clickCountyCheckbox('Canada');
-console.log('');
+console.log('test');
 
 });
