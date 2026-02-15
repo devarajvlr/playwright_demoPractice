@@ -52,3 +52,13 @@ await homepage1.clickCountyCheckbox('Canada');
 console.log('');
 
 });
+
+test('loginpractice',async({page})=>{
+  const usname = "//input[@name='username']"
+  const pwd = "//input[@name='password']"
+  const submitbutton = "//button[@id='submit']"
+  await page.goto('https://practicetestautomation.com/practice-test-login/');
+  await page.locator(usname).click;
+  await page.locator(pwd).click;
+  await page.locator(submitbutton).click
+} );
