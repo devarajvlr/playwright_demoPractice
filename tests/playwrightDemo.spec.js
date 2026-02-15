@@ -8,3 +8,5 @@ test('basic test', async({page})=>{
     await page.getByRole('link', {name: 'Get Started'}).click();
     await expect(page.getByRole('heading', {name: 'Installation'})).toBeVisible();
 })
+
+
