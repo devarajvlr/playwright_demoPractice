@@ -25,10 +25,10 @@ test('Navigation ',{tag: '@smoke'},async({page})=>{
 
     const homepage1 = new homepage(page);
 
-await page.goto('https://cosmocode.io/automation-practice-webtable/');
+    await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
 
-await homepage1.clickCountyCheckbox('Angola');
-console.log('');
+    const city = await homepage1.getCityNameofEmployee('Ivory');
+    console.log(city);
 
 });
 
@@ -36,19 +36,19 @@ console.log('');
 test('selectCountry1 ',{tag:'@smoke'},async({page})=>{
     const homepage1 = new homepage(page);
 
-await page.goto('https://cosmocode.io/automation-practice-webtable/');
+    await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
 
-await homepage1.clickCountyCheckbox('Bhutan');
-console.log('');
+    const city = await homepage1.getCityNameofEmployee('Jack');
+    console.log(city);
 
 });
 
 test('selectCountry2 ',{tag:'@regression'},async({page})=>{
     const homepage1 = new homepage(page);
 
-await page.goto('https://cosmocode.io/automation-practice-webtable/');
+    await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
 
-await homepage1.clickCountyCheckbox('Canada');
-console.log('');
+    const city = await homepage1.getCityNameofEmployee('Joe');
+    console.log(city);
 
 });
