@@ -10,10 +10,10 @@ exports.homepage = class homepage {
     this.name = this.page.locator("");
   }
 
-  async clickCountyCheckbox(countryNAme){
-    const lc = "//td[contains(.,'"+countryNAme+"')]/preceding-sibling::td/input";
-    await this.page.locator(lc).click();
-
+  async getCityNameofEmployee(EmpName){
+    const lc = "//td[contains(.,'" + EmpName + "')]/following-sibling::td[2]";
+    const city = await this.page.locator(lc).textContent();
+    return city;
   }
 
   
