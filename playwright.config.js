@@ -79,3 +79,10 @@ export default defineConfig({
   // },
 });
 
+module.exports = {
+  globalSetup: require.resolve('./global-setup.js'),
+  use: {
+    storageState: 'auth.json',
+  },
+};
+
